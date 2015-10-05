@@ -22,7 +22,9 @@ function xango_child_load_scripts() {
 	$template_url = get_template_directory_uri();
 
 	// Loads Odin main stylesheet.
-	wp_enqueue_style( 'xango-child-css', get_template_directory_uri() . '/assets/css/style.css', array(), null, 'all' );
+	wp_enqueue_style( 'xango-child-css', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), null, 'all' );
+
+	wp_enqueue_style( 'xango-child-sourcesans', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,900italic,900,700italic,700,600italic,600,400italic', array(), null, 'all' );
 
 }
 

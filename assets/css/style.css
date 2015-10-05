@@ -4,5 +4,5 @@ Author URI: http://wpod.in/
 Description: Odin main stylesheet.
 Author: the Odin team
 Author URI: http://wpod.in/#colaboradores
-*//*! Example to add SASS files */body{background:black}
+*//*! Example to add SASS files */body{background:black}#header.matuck{background:url("../images/bg-header.jpg") no-repeat !important;background-size:cover !important}#header.matuck #logo-matuck{overflow:inherit !important}#header.matuck #main-navigation nav>ul>li>a{font-family:'Source Sans Pro', sans-serif;font-weight:400;color:#161617;font-size:1.2em}#header.matuck #main-navigation nav>ul>li>a:hover,#header.matuck #main-navigation nav .active a{color:#660604;background:transparent !important}#header.matuck #main-navigation nav{float:right}
 /*# sourceMappingURL=style.css.map */

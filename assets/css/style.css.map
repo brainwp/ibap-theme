@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";;;;;;kCAAA,IAAK,CACJ,UAAU,CAAE,KAAK",
-"sources": ["../sass/slider-noticias.scss"],
+"mappings": ";;;;;;kCAAA,IAAK,CACJ,UAAU,CAAE,KAAK,CCDlB,cAAe,CACd,UAAU,CAAE,mDAAmD,CAC/D,eAAe,CAAC,gBAAgB,CAChC,2BAAa,CACZ,QAAQ,CAAE,kBAAkB,CAE7B,2CAAkC,CACjC,WAAW,CAAE,6BAA6B,CAC1C,WAAW,CAAE,GAAG,CAChB,KAAK,CAAE,OAAO,CACd,SAAS,CAAC,KAAK,CAEhB,+FAAwE,CACvE,KAAK,CAAE,OAAO,CACd,UAAU,CAAE,sBACb,CACA,mCAAqB,CACpB,KAAK,CAAE,KAAK",
+"sources": ["../sass/slider-noticias.scss","../sass/header.scss"],
 "names": [],
 "file": "style.css"
 }
