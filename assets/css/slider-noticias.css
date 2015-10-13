@@ -1,2 +1,2 @@
-body{background:black}
+.ibap-slider-home{background:url("../images/bg-slider-home.jpg") center no-repeat;background-size:cover}.ibap-slider-home button.slick-prev{height:40px;width:40px;background:url("../images/arrow-right.png") no-repeat}.ibap-slider-home button.slick-next{height:40px;width:40px;background:url("../images/arrow-left.png") no-repeat}.ibap-slider-home button:before,.ibap-slider-home button:after{display:none !important}
 /*# sourceMappingURL=slider-noticias.css.map */

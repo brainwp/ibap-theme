@@ -26,7 +26,21 @@ function xango_child_load_scripts() {
 
 	wp_enqueue_style( 'xango-child-sourcesans', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,900italic,900,700italic,700,600italic,600,400italic', array(), null, 'all' );
 
+	wp_enqueue_script( 'main-xango-childjs', get_stylesheet_directory_uri() . '/assets/js/main.min.js', array(), true );
 }
 
 add_action( 'wp_enqueue_scripts', 'xango_child_load_scripts', 99999 );
 
+/* Brasa slider actions */
+function ibap_before_slider_home() {
+	echo '<div class="ibap-slider-home col-md-12">';
+	echo '<div class="container">';
+}
+add_action( 'brasa_slider_home_before', 'ibap_before_slider_home' );
+
+/* Brasa slider actions */
+function ibap_after_slider_home() {
+	echo '</div>';
+	echo '</div>';
+}
+add_action( 'brasa_slider_home_after', 'ibap_after_slider_home' );
