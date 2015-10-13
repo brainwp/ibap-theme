@@ -44,3 +44,22 @@ function ibap_after_slider_home() {
 	echo '</div>';
 }
 add_action( 'brasa_slider_home_after', 'ibap_after_slider_home' );
+
+function ibap_slider_text_box($str){
+	global $brasa_slider_id, $brasa_slider_item_id;
+
+	$brasa_slider_item_id = intval( $brasa_slider_item_id );
+    
+ 	if( get_the_title( $brasa_slider_id ) != 'Slider home' ) {
+  		return $str;
+  	}
+  	if (  wp_attachment_is_image( $brasa_slider_item_id ) ) {
+  		return $str;
+  	}
+  	$str .= '<div class="col-md-3 text-box">';
+  	$str .= sprintf( '<h3>%s</h3>', get_the_title( $brasa_slider_item_id ) );
+  	$str .= sprintf( '<div class="content">%s</div>', odin_get_excerpt( $brasa_slider_item_id ) );
+  	$str .= '</div>';
+  	return $str;
+}
+add_filter('brasa_slider_loop_after_image','ibap_slider_text_box');
