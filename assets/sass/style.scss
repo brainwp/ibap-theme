@@ -11,6 +11,8 @@ Author URI: http://wpod.in/#colaboradores
 */ 
 /*! Example to add SASS files */
 @import
-        "slider-noticias.scss",       // Slider Noticias
-        "header.scss"       // Header
+		"main.scss",       // Global styles
+        "slider-top.scss",       // Slider no topo da página
+        "header.scss",       // Header
+        "slider-noticias.scss"       // Slider noticias
 ;

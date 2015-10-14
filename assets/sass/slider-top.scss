@@ -1,0 +1,31 @@
+.ibap-slider-home {
+	background: url('../images/bg-slider-home.jpg') center no-repeat;
+	background-size: cover;
+	button.slick-prev {
+		height:40px;
+		width:40px;
+		background: url('../images/arrow-right.png') no-repeat;
+	}
+	button.slick-next {
+		height:40px;
+		width:40px;
+		background: url('../images/arrow-left.png') no-repeat;
+	}
+	button {
+		&:before, &:after{
+			display:none !important;
+		}
+	}
+	.text-box {
+		background: rgba( 0, 0, 0, 0.7);
+		font-family: 'Source Sans Pro', sans-serif;
+		color:#FFF;
+		position:absolute;
+		bottom:25%;
+		margin-left:20px;
+		h3 {
+			font-weight: 400;
+			color:#FFF;
+		}
+	}
+}

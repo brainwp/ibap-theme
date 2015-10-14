@@ -42,6 +42,7 @@ add_action( 'brasa_slider_home_before', 'ibap_before_slider_home' );
 function ibap_after_slider_home() {
 	echo '</div>';
 	echo '</div>';
+	get_template_part( 'parts/slider-noticias');
 }
 add_action( 'brasa_slider_home_after', 'ibap_after_slider_home' );
 
