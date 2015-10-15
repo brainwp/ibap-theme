@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="col-md-12 noticias-slider-content text-center">
 			<h2><?php _e( 'Ultimas Notícias', 'ibap-theme' ); ?></h2>
-			<div class="col-md-10 col-md-offset-1 slider-noticias">
+			<div class="col-md-12 slider-noticias">
 				<?php
 				// WP_Query arguments
 				$args = array (
