@@ -42,8 +42,9 @@ add_action( 'brasa_slider_home_before', 'ibap_before_slider_home' );
 function ibap_after_slider_home() {
 	echo '</div>';
 	echo '</div>';
-	get_template_part( 'parts/slider-noticias');
-	get_template_part( 'parts/about-section');
+	get_template_part( 'parts/slider-noticias' );
+	get_template_part( 'parts/about-section' );
+	get_template_part( 'parts/biblioteca-footer' );
 
 }
 add_action( 'brasa_slider_home_after', 'ibap_after_slider_home' );
@@ -71,3 +72,4 @@ require_once get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 //require_once get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
 //require_once get_template_directory() . '/inc/acf-repeater/acf-repeater.php';
 require_once get_stylesheet_directory() . '/inc/fields.php';
+require_once get_stylesheet_directory() . '/inc/customizer.php';
