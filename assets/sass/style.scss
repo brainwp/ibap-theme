@@ -1,0 +1,19 @@
+// ==========================================================================
+// Theme Style Main
+// ==========================================================================
+
+/*!
+Theme Name: Odin
+Author URI: http://wpod.in/
+Description: Odin main stylesheet.
+Author: the Odin team
+Author URI: http://wpod.in/#colaboradores
+*/ 
+/*! Example to add SASS files */
+@import
+		"main.scss",       // Global styles
+        "slider-top.scss",       // Slider no topo da página
+        "header.scss",       // Header
+        "slider-noticias.scss",       // Slider noticias
+        "about-section.scss"       // Seção sobre
+;
