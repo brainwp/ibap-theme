@@ -57,12 +57,77 @@ function brasa_kirki_fields( $fields ) {
         'priority' => 5,
     );
     $fields[] = array(
-        'type'     => 'textarea',
+        'type'     => 'text',
         'setting'  => 'biblioteca_footer_link_1',
         'label'    => __( 'URL do primeiro link', 'ibap-theme' ),
         'section'  => 'biblioteca_footer',
         'default'  => '',
         'priority' => 6,
+    );
+     $fields[] = array(
+        'type'     => 'text',
+        'setting'  => 'biblioteca_footer_title_2',
+        'label'    => __( 'Título do segundo link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 7,
+    );
+    $fields[] = array(
+        'type'     => 'image',
+        'setting'  => 'biblioteca_footer_title_img_2',
+        'label'    => __( 'Icone do segundo link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 8,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'biblioteca_footer_description_2',
+        'label'    => __( 'Descrição do segundo link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 9,
+    );
+    $fields[] = array(
+        'type'     => 'text',
+        'setting'  => 'biblioteca_footer_link_2',
+        'label'    => __( 'URL do segundo link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 10,
+    );
+    
+    $fields[] = array(
+        'type'     => 'text',
+        'setting'  => 'biblioteca_footer_title_3',
+        'label'    => __( 'Título do terceiro link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 11,
+    );
+    $fields[] = array(
+        'type'     => 'image',
+        'setting'  => 'biblioteca_footer_title_img_3',
+        'label'    => __( 'Icone do terceiro link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 12,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'biblioteca_footer_description_3',
+        'label'    => __( 'Descrição do terceiro link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 13,
+    );
+    $fields[] = array(
+        'type'     => 'text',
+        'setting'  => 'biblioteca_footer_link_3',
+        'label'    => __( 'URL do terceiro link', 'ibap-theme' ),
+        'section'  => 'biblioteca_footer',
+        'default'  => '',
+        'priority' => 14,
     );
     return $fields;
 }

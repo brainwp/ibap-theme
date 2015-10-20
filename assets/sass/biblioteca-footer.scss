@@ -33,9 +33,24 @@
 		padding-right: 0;
 		padding-left:0;
 		height:20px;
-		background: black;
-		img {
-			width:100%;
+		.biblioteca-each-link {
+			display: block;
+		}
+		.icon-img, .biblioteca-each-link {
+			padding: 0;
+		}
+		.icon-img {
+			overflow: hidden;
+			max-height: 64px;
+		}
+		.the-title {
+			padding-top:10px;
+			color:#5A0D0D;
+			font-weight: 300;
+			font-size:2.0em;
+		}
+		.description {
+			color:#0c0c0c;
 		}
 	}
 }
