@@ -1,0 +1,166 @@
+@keyframes animate-scroll-content{
+  10% {
+    transform: translate(0, 5px);
+  }
+  70% {
+    transform:  translate(0,0);
+  }
+}
+#biblioteca-header {
+	* {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	.header-page-image {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding-top:50px;
+		padding-bottom:120px;
+		text-align: center;
+	}
+	h1 {
+		color: #FFF;
+		font-weight: bold;
+		text-align: center;
+		width: 100%;
+		display: inline-block;
+		clear: both;
+		font-size:3.5em;
+	}
+	.the-content {
+		padding:10px;
+		background: rgba( 0, 0, 0, 0.8 );
+		color:#FFF;
+	}
+	.scroll-content {
+		display: block;
+		height:51px;
+		background: url( '../images/bg-biblioteca-scroll.png') center no-repeat;
+		position: absolute;
+		bottom: -28px;
+		animation: animate-scroll-content 1s ease 5;
+	}
+	.scroll-content:hover {
+		animation-play-state:paused;
+	}
+}
+.biblioteca-query {
+	padding-bottom: 40px;
+	background: #ffefb5 url( '../images/bg-about.jpg' ) bottom no-repeat;
+	* {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	.section-name {
+		text-align: center;
+		color: #5a0d0d;
+		font-weight: 400;
+		clear: both;
+		width: 100%;
+		display: inline-block;
+		padding-bottom:20px;
+	}
+	.btn-more-container{
+		padding-top:20px;
+	}
+}
+.each-article {
+	margin-bottom:20px;
+	.article-bg {
+		display: block;
+		background: #FFF;
+	}
+	.article-title h3 {
+		padding-left:10px;
+		padding-right:10px;
+		font-weight: 300;
+		color: #5a0d0d;
+	}
+	.the-content {
+		color: #101010;
+		font-size: 1.0em;
+		padding-bottom:10px;
+	}
+	.btn-container button {
+		font-family: 'Source Sans Pro', sans-serif;
+		position: absolute;
+		margin-top:-20px;
+		border:transparent !important;
+		background: #5a0d0d !important;
+	}
+}
+.each-livros {
+	padding-bottom:20px;
+
+	.livros-bg {
+		background: #FFF;
+		padding-left:0;
+	}
+	.livros-thumb {
+		padding-left: 0;
+	}
+	.livros-title h3{
+		padding-top:10px;
+		font-size:1.5em;
+		margin-top: 0;
+		font-weight: 300;
+		color: #5a0d0d;
+	}
+	.the-content {
+		color: #101010;
+		font-size: 1.0em;
+		padding:0;
+	}
+	.btn-container button {
+		font-family: 'Source Sans Pro', sans-serif;
+		position: absolute;
+		right:-20px;
+		margin-top:-20px;
+		border:transparent !important;
+		background: #5a0d0d !important;
+	}
+
+}
+.revistas-footer {
+	.biblioteca-title {
+		font-weight: 400 !important;
+		display: inline-block;
+		background: #FFF url("../images/revistas-icon.jpg") no-repeat 10px 10px !important;
+		padding-left: 80px !important;
+		text-align: center;
+		padding-bottom: 25px !important;
+		font-size: 2.5em;
+		padding-top: 20px !important;	
+	}
+}
+.each-revista {
+	.revista-bg {
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-left:0;
+		padding-right:0;
+		height:280px;
+	}
+	* {
+		color: #FFF;
+	}
+	.article-toggle {
+		position: absolute;
+		bottom:0;
+		width: 100%;
+		background: rgba( 0, 0, 0, 0.8 );
+		transition:400ms ease all;
+		.the-content{
+			height:0;
+			opacity:0;
+			transition:700ms ease all;
+		}
+		&:hover {
+			transition:400ms ease all;
+			.the-content {
+				transition:700ms ease all;
+				height:auto;
+				opacity:1;
+			}
+		}
+	}
+}

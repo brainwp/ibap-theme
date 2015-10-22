@@ -67,9 +67,13 @@ function ibap_slider_text_box($str){
   	return $str;
 }
 add_filter('brasa_slider_loop_after_image','ibap_slider_text_box');
+// Load custom post types & taxs 
+require_once get_stylesheet_directory() . '/inc/cpts.php';
 
+// ACF & Customizer
 require_once get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 //require_once get_template_directory() . '/inc/acf-options-page/acf-options-page.php';
 //require_once get_template_directory() . '/inc/acf-repeater/acf-repeater.php';
 require_once get_stylesheet_directory() . '/inc/fields.php';
 require_once get_stylesheet_directory() . '/inc/customizer.php';
+
