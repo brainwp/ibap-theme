@@ -68,7 +68,7 @@ function ibap_slider_text_box($str){
 }
 add_filter('brasa_slider_loop_after_image','ibap_slider_text_box');
 // Load custom post types & taxs 
-require_once get_stylesheet_directory() . '/inc/cpts.php';
+//require_once get_stylesheet_directory() . '/inc/cpts.php';
 
 // ACF & Customizer
 require_once get_template_directory() . '/inc/advanced-custom-fields/acf.php';

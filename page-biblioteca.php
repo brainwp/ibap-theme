@@ -17,7 +17,7 @@ get_header(	'matuck' );
 		while ( have_posts() ) : the_post(); ?>
 			<?php if ( has_post_thumbnail() ) : ?>
 				<?php $url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );?>
-				<div class="col-md-12 header-page-image" style="background-image:url(<?php echo esc_attr( $url );?>);">
+				<div class="col-md-12 header-page-image" style="background-image:url(<?php echo esc_attr( $url );?>);" id="bandeira-<?php echo get_the_ID();?>">
 					<h1 class="page-title"><?php the_title();?></h1><!-- .page-title -->
 					<div class="col-md-8 col-md-offset-2 the-content">
 						<?php the_content();?>

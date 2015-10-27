@@ -6,9 +6,12 @@
     transform:  translate(0,0);
   }
 }
-#biblioteca-header {
+#biblioteca-header, .biblioteca-header {
 	* {
 		font-family: 'Source Sans Pro', sans-serif;
+	}
+	&.bg-bege {
+		background: transparent url("../images/bg-about.jpg") no-repeat scroll center center / cover;
 	}
 	.header-page-image {
 		background-size: cover;
@@ -38,7 +41,7 @@
 		background: url( '../images/bg-biblioteca-scroll.png') center no-repeat;
 		position: absolute;
 		bottom: -28px;
-		animation: animate-scroll-content 1s ease 5;
+		animation: animate-scroll-content 1s ease infinite;
 	}
 	.scroll-content:hover {
 		animation-play-state:paused;
