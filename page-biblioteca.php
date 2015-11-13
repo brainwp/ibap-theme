@@ -8,7 +8,7 @@
  * @since 2.2.0
  */
 
-get_header(	'matuck' );
+get_header( 'matuck' );
 ?>
 <div class="ibap-slider-home col-md-12" id="biblioteca-header">
 	<div class="container">
