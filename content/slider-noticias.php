@@ -7,14 +7,14 @@
 			<?php the_post_thumbnail( 'medium' );?>
 		</a><!-- .thumbnail -->
 		<div class="each-slider-content">
-			<h3><?php the_title();?></h3>
+			<a href="<?php the_permalink();?>"><h3><?php the_title();?></h3></a>
 			<div class="slider-author">
 				<?php printf( __( 'criado por %s', 'ibap-theme'), get_the_author() );?>
 			</div><!-- .col-md-12 slider-author -->
 			<div class="slider-text">
 				<?php the_excerpt();?>
 			</div><!-- .slider-text -->
-		</div><!-- .each-slider-content -->
+		</div><!-- .each-slider-content -->	
 		<a href="<?php the_permalink();?>" class="btn btn-primary">
 			<?php _e( 'leia mais >>', 'ibap-theme' );?>
 		</a>

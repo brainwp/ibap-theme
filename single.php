@@ -8,12 +8,14 @@
 
 get_header( 'matuck' ); ?>
 <div class="ibap-single col-md-12">
+
 				<?php
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
 ?>
 
 	<header class="entry-header col-md-12">
+<div class="container">
 		<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -23,15 +25,14 @@ get_header( 'matuck' ); ?>
 		?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php odin_posted_on(); ?>
-			</div><!-- .entry-meta -->
+			<!-- <div class="entry-meta"> <?php // odin_posted_on(); ?> </div> -->
 		<?php endif; ?>
+	</div>
 	</header><!-- .entry-header -->
 
 	<div class="clear"></div>
-
-	<div class="container col-md-8">
+<div class="container">
+	<div class="container col-md-9">
 			<main id="main-content" class="site-main" role="main">
 
 						<?php
@@ -50,10 +51,11 @@ get_header( 'matuck' ); ?>
 				?>
 			</main><!-- #main -->
 	</div><!-- .container -->
-	<div class="col-md-4 pull-right">
+	<div class="col-md-3 pull-right">
 	<?php
 	get_sidebar(); ?>
 	</div>
+</div>
 </div>
 <?php
 get_footer(); ?>
