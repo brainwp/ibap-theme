@@ -26,6 +26,16 @@
 	color: #FFF;
 }
 
+.ibap-page  .entry-header {
+	width: 100%;
+	background: #E4CA8F;
+	color: #642827;
+}
+
+.error404 { 
+	color: #642827;
+}
+
 #main-content { 
 	margin: 20px 0;
 	padding: 10px 40px;
@@ -46,14 +56,38 @@ h1.entry-title {
 	margin-left: 50px;
 }
 
-.ibap-single {
+.ibap-single, .ibap-page {
 	background: url("../images/bg-about.jpg") ;
 	background-size: cover;
 	min-height: 200px;
 	padding: 0;
 }
+.error404 {
+	background: url("../images/bg-about.jpg") ;
+	background-size: cover;
+	min-height: 200px;
+	padding: 0;
+}
+.ibap-page h1.entry-title {
+	margin-left: 100px;
+}
+
+.error404 h1.page-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 7em;
+	line-height: 1.1;
+	font-weight: bold;
+	padding: 20px 0;
+	color: #642827;
+}
+
 
 .entry-content p {
 	font-size: 1.4em;
 	line-height: 1.2;
+}
+
+.page-content {
+	margin: 20px auto;
+	float: none;
 }

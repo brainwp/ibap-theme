@@ -6,12 +6,13 @@
  * @since 2.2.0
  */
 
-get_header(); ?>
-
-	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
+get_header('matuck'); ?>
+<div class="container">
+	<main id="content" class="page-content col-md-10">
 
 			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'odin' ); ?></h1>
+				<h1 class="page-title"><?php _e( '404', 'odin' ); ?></h1>
+				<h3 class="page-title"><?php _e( 'Not Found', 'odin' ); ?></h1>
 			</header>
 
 			<div class="page-content">
@@ -21,6 +22,6 @@ get_header(); ?>
 			</div><!-- .page-content -->
 
 	</main><!-- #main -->
-
+</div>
 <?php
 get_footer();
