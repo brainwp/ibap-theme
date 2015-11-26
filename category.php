@@ -19,13 +19,14 @@ get_header('matuck'); ?>
 		<header class="entry-header col-md-12">
 			<div class="container">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="entry-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 			?></div>
 		</header><!-- .entry-header -->
 		<div class="clear"></div>
 	<div class="container">
-		<main id="content" class="page-content col-md-12">
+		<main id="content" class="noticias-slider-content col-md-12">
+			<div class="col-md-12 slider-noticias">
 				<?php
 						// Start the Loop.
 						while ( have_posts() ) : the_post();
@@ -48,6 +49,7 @@ get_header('matuck'); ?>
 
 				endif;
 				?>
+			</div>
 		</main><!-- #main -->
 	</div><!-- .container -->
 </div><!-- .container -->
