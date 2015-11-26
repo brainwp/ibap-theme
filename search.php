@@ -9,23 +9,14 @@
 get_header('matuck'); ?>
 <div class="ibap-single col-md-12">
 
-				<?php
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
-?>
+				<?php if ( have_posts() ) : ?>
 
-	<header class="entry-header col-md-12">
-<div class="container">
-		<?php
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			
-		?>
-	</div>
+		<header class="entry-header col-md-12">
+					<h2 class="search-title"><?php printf( __( 'Search Results for: %s', 'odin' ), get_search_query() ); ?></h2>
+		
 	</header><!-- .entry-header -->
 
-				<?php endwhile;	?>
-
-	<div class="clear"></div>
+				<?php endif;	?>
 
 	<div class="clear"></div>
 <div class="container">
@@ -34,10 +25,7 @@ get_header('matuck'); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'odin' ), get_search_query() ); ?></h1>
-				</header><!-- .page-header -->
-
+				
 					<?php
 						// Start the Loop.
 						while ( have_posts() ) : the_post();

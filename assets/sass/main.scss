@@ -51,6 +51,33 @@ h1.entry-title {
 	margin-left: 50px;
 }
 
+.search h2.search-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 3em;
+	padding: 20px 10px;
+	margin-left: 100px;
+}
+
+.search h1.entry-title {
+	font-size: 3em;
+	padding: 20px 0px;
+	margin-left: 0px;
+}
+
+
+.search h1.entry-title a{
+	color: #642827;
+	text-decoration: none;
+}
+
+.search h1.entry-title a:hover {
+	color: #9E3131;
+}
+
+.search span.comments-link {
+	display: none;
+}
+
 .entry-header .entry-meta {
 	padding: 20px 10px;
 	margin-left: 50px;
