@@ -53,8 +53,7 @@ function ibap_slider_text_box($str){
 	global $brasa_slider_id, $brasa_slider_item_id;
 
 	$brasa_slider_item_id = intval( $brasa_slider_item_id );
-    
- 	if( get_the_title( $brasa_slider_id ) != 'Slider home' ) {
+ 	if( strtolower( get_the_title( $brasa_slider_id ) ) != 'slider home' ) {
   		return $str;
   	}
   	if (  wp_attachment_is_image( $brasa_slider_item_id ) ) {
