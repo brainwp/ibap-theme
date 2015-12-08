@@ -1,6 +1,7 @@
 #header.matuck {
 	background: url('../images/bg-header.jpg') no-repeat !important;
 	background-size:cover !important;
+	
 	#logo-matuck {
 		overflow: inherit !important;
 	}
@@ -12,9 +13,41 @@
 	}
 	#main-navigation nav > ul > li > a:hover, #main-navigation nav .active a{
 		color: #660604;
-		background: transparent !important;
+		background-color: transparent !important;
+	}
+
+	#main-navigation nav > ul > li > a:hover {
+		border-bottom: 2px solid #660604;
 	}
 	#main-navigation nav {
 		float: right;
 	}
+
+	.dropdown-menu {
+		background-color: #FFEFB4;
+	}
+
+	#main-navigation li.menu-item-has-children ul {
+	    background: #FFEFB4 scroll 0% 0% !important;
+	}
+	
+	#main-navigation li.menu-item-has-children ul > li > a {
+		background: #FFEFB4 scroll 0% 0% !important;
+	}
+
+	#main-navigation li.menu-item-has-children ul > li > a:hover {
+		color: #FFF !important;
+		background: #660604 scroll 0% 0% !important;
+	}
+	
+	#main-navigation li > a:hover {
+		color: #FFF !important;
+		background: #660604 scroll 0% 0% !important;
+	}
+
+	.navbar-default .navbar-nav > .open > a {
+		background-color: none;
+	}
+
 }
+
