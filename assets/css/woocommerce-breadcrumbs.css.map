@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAmB,CAClB,UAAU,CAAC,OAAO,CAClB,cAAc,CAAC,IAAI,CACnB,WAAW,CAAC,IAAI,CAChB,8BAAY,CACX,OAAO,CAAC,CAAC,CACT,MAAM,CAAC,CAAC,CACR,UAAU,CAAE,eAAe,CAE5B,oBAAE,CACD,WAAW,CAAE,6BAA6B,CAC1C,KAAK,CAAC,kBAAkB",
+"sources": ["../sass/woocommerce-breadcrumbs.scss"],
+"names": [],
+"file": "woocommerce-breadcrumbs.css"
+}

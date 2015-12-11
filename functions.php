@@ -75,4 +75,23 @@ require_once get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 //require_once get_template_directory() . '/inc/acf-repeater/acf-repeater.php';
 require_once get_stylesheet_directory() . '/inc/fields.php';
 require_once get_stylesheet_directory() . '/inc/customizer.php';
+function add_odin_breadcrumb_xango() {
+	if ( is_woocommerce() ) {
+		get_template_part( '/parts/woocommerce-breadcrumbs' );
+	}
+}
+add_action( 'xango_theme_slider_area', 'add_odin_breadcrumb_xango', 999 );
 
+//remove title default location
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 ); 
+/* check if has cat revistas or livros */
+function get_woocommerce_cat_query() {
+	global $post;
+	if ( has_term( 'livros', 'product_cat', $post ) ) {
+		return 'livros';
+	}
+	else {
+		return 'revistas';
+	}
+}

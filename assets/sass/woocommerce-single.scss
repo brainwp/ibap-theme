@@ -1,0 +1,94 @@
+.woocommerce {
+	* {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	.woocommerce-title {
+		background: #f7db9c;
+		h1 {
+			font-weight: bold;
+			font-size: 3em;
+		}
+	}
+	.button {
+		background: #5a0d0d !important;
+		font-weight: normal !important;
+		color:#FFF !important;
+	}
+}
+.woocommerce.single-product{
+	.entry-summary .price {
+		display: none;
+	}
+	@media screen and (min-width: 800px) {
+		.entry-summary {
+			width:60% !important;
+		}
+		.images {
+			width:35% !important;
+		}
+	}
+
+	.entry-summary [itemprop="description"] p, .product_meta *{
+		color: #660604;
+	}
+	.product_meta a {
+		text-decoration: underline;
+	}
+	form.cart {
+		float:right;
+		margin-top: 5px;
+	}
+	.product_meta {
+		width:100%;
+		clear: both;
+		padding-bottom:20px;
+		border-bottom: 2px solid #a4a092; 
+		margin-bottom: 30px;
+	}
+	.woocommerce-price .amount{
+		color: #660604;
+		font-size:1.8em;
+		font-weight: 400;
+	}
+	.wc-tabs li {
+		background: none !important;
+		border: none !important
+	}
+	.wc-tabs {
+		border: none !important;
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	.woocommerce-tabs ul.tabs li::after,
+	.woocommerce div.product .woocommerce-tabs ul.tabs li::before,
+	.woocommerce-tabs ul.tabs li::after,
+	.woocommerce-tabs ul.tabs li::before, 
+	.woocommerce-tabs ul.tabs::before{
+		content:'' !important;
+		display: none !important;
+		width:0 !important;
+		height:0 !important;
+	}
+	.woocommerce-tabs ul.tabs li a{
+		font-weight: 400 !important;
+		color: #660604 !important;
+	}
+	.woocommerce-tabs ul.tabs li:hover, .woocommerce-tabs ul.tabs li.active{
+		transition:200ms ease all;
+		border-bottom: 2px solid #660604 !important;
+	}
+	.woocommerce-tabs .panel{
+		background: #ffefc6 !important;
+		border-radius: 0 !important;
+		padding:10px !important;
+		border:none !important;
+		color: #660604 !important;
+	}
+	.review-form .stars a{
+		color:#660604 !important;
+	}
+	.biblioteca-footer h2.biblioteca-title {
+		background: #FFF !important;
+		padding-left:40px !important;
+	}
+}

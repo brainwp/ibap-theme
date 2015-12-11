@@ -11,6 +11,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'matuck' ); ?>
+<div class="col-md-12 woocommerce-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1><?php the_title();?></h1>
+			</div><!-- .col-md-12 -->
+		</div><!-- .row -->
+	</div><!-- .container -->
+</div><!-- .col-md-12 woocommerce-title -->
 <div class="ibap-single col-md-12">
 
 	<?php
@@ -35,7 +44,7 @@ get_header( 'matuck' ); ?>
 
 	<div class="clear"></div>
 <div class="container">
-	<div class="container col-md-10">
+	<div class="container">
 			<main id="main-content" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -59,5 +68,6 @@ get_header( 'matuck' ); ?>
 
 </div>
 </div>
+<?php get_template_part( '/parts/revistas-footer' );?>
 <?php
 get_footer(); ?>
