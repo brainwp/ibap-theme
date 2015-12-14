@@ -67,13 +67,13 @@
 	}
 }
 .each-article {
-	margin-bottom:20px;
+	margin-bottom:40px;
 	.article-bg {
 		display: block;
 		background: #FFF;
 	}
 	.article-title h3 {
-		padding-left:10px;
+		padding-left:0;
 		padding-right:10px;
 		font-weight: 300;
 		color: #5a0d0d;
@@ -86,13 +86,14 @@
 	.btn-container button {
 		font-family: 'Source Sans Pro', sans-serif;
 		position: absolute;
-		margin-top:-20px;
+		margin-top:-10px;
 		border:transparent !important;
 		background: #5a0d0d !important;
+		right: 5px;
 	}
 }
 .each-livros {
-	padding-bottom:20px;
+	padding-bottom:40px;
 
 	.livros-bg {
 		background: #FFF;
@@ -102,8 +103,7 @@
 		padding-left: 0;
 	}
 	.livros-title h3{
-		padding-top:10px;
-		font-size:1.5em;
+		padding-top:20px;
 		margin-top: 0;
 		font-weight: 300;
 		color: #5a0d0d;
@@ -112,12 +112,13 @@
 		color: #101010;
 		font-size: 1.0em;
 		padding:0;
+		margin-bottom: 10px;
 	}
 	.btn-container button {
 		font-family: 'Source Sans Pro', sans-serif;
 		position: absolute;
-		right:-20px;
-		margin-top:-20px;
+		right:-10px;
+		margin-top:-10px;
 		border:transparent !important;
 		background: #5a0d0d !important;
 	}
@@ -136,6 +137,9 @@
 	}
 }
 .each-revista {
+
+	padding-bottom:40px;
+	
 	.revista-bg {
 		background-size: cover;
 		background-repeat: no-repeat;

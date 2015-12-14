@@ -28,8 +28,12 @@ body.home .entry-header {
 
 .ibap-page  .entry-header {
 	width: 100%;
-	background: #E4CA8F;
 	color: #642827;
+	background: #E4CA8F; /* Old browsers */
+	background: -moz-linear-gradient(top, #d6c087 0%, #f9dd9c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d6c087 0%,#f9dd9c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d6c087 0%,#f9dd9c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6c087', endColorstr='#f9dd9c',GradientType=0 ); /* IE6-9 */
 }
 
 .error404 { 
@@ -44,7 +48,7 @@ body.home .entry-header {
 
 h1.entry-title {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 4em;
+	font-size: 3.5em;
 	line-height: 1.1;
 	font-weight: bold;
 	padding: 20px 10px;
