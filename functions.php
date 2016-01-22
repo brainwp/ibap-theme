@@ -80,6 +80,112 @@ function add_odin_breadcrumb_xango() {
 		get_template_part( '/parts/woocommerce-breadcrumbs' );
 	}
 }
+
+/**
+ * Odin Classes.
+ */
+require_once get_template_directory() . '/core/classes/class-bootstrap-nav.php';
+require_once get_template_directory() . '/core/classes/class-shortcodes.php';
+// require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
+require_once get_template_directory() . '/core/classes/class-post-type.php';
+// require_once get_template_directory() . '/core/classes/class-theme-options.php';
+// require_once get_template_directory() . '/core/classes/class-options-helper.php';
+// require_once get_template_directory() . '/core/classes/class-taxonomy.php';
+// require_once get_template_directory() . '/core/classes/class-metabox.php';
+// require_once get_template_directory() . '/core/classes/abstracts/abstract-front-end-form.php';
+// require_once get_template_directory() . '/core/classes/class-contact-form.php';
+// require_once get_template_directory() . '/core/classes/class-post-form.php';
+// require_once get_template_directory() . '/core/classes/class-user-meta.php';
+
+/* Agenda */
+
+$eventos = new Odin_Post_Type(
+    'Agenda', // Nome (Singular) do Post Type.
+    'agenda' // Slug do Post Type.
+);
+
+$eventos->set_labels(
+    array(
+        'menu_name' => __( 'Agenda', 'odin' ),
+	'name_admin_bar'      => __( 'Agenda', 'odin' ),
+	'parent_item_colon'   => __( 'Evento parente', 'odin' ),
+	'all_items'           => __( 'Todos eventos', 'odin' ),
+	'add_new_item'        => __( 'Adicionar novo Evento', 'odin' ),
+	'add_new'             => __( 'Adicionar novo', 'odin' ),
+	'new_item'            => __( 'Novo evento', 'odin' ),
+	'edit_item'           => __( 'Editar evento', 'odin' ),
+	'update_item'         => __( 'Atualizar Evento', 'odin' ),
+	'view_item'           => __( 'Ver evento', 'odin' ),
+	'search_items'        => __( 'Buscar Evento', 'odin' ),
+	'not_found'           => __( 'Não encontrado', 'odin' ),
+	'not_found_in_trash'  => __( 'Não encontrado na lixeira', 'odin' )
+    )
+);
+
+$eventos->set_arguments(
+    array(
+       'label'               => __( 'agenda', 'odin' ),
+	'description'         => __( 'Agenda de Eventos', 'odin' ),
+	'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail'),
+	'hierarchical'        => false,
+	'public'              => true,
+	'show_ui'             => true,
+	'show_in_menu'        => true,
+	'menu_position'       => 5,
+	'menu_icon'           => 'dashicons-calendar-alt',
+	'show_in_admin_bar'   => true,
+	'show_in_nav_menus'   => true,
+	'can_export'          => true,
+	'has_archive'         => true,
+	'exclude_from_search' => false,
+	'publicly_queryable'  => true,
+	'capability_type'     => 'page',
+    )
+);
+
+function filter_query_agenda($query){
+	if( is_admin() )
+		return;
+
+    if ( $query->is_main_query() && is_post_type_archive('agenda') ) {
+        $query->set( 'orderby', 'meta_value' );
+        $query->set( 'meta_key', 'agenda_data' );
+        $query->set( 'order', 'DESC' );
+
+        $current = current_time('Ymd');
+        $meta = array();
+        $meta[] = array(
+			'key' => 'agenda_data',
+			'compare' => '>=',
+			'value' => $current
+		);
+
+		$query->set('meta_query', $meta);
+
+    }
+    if ( is_page() && is_page_template('agenda-antigos.php') && $query->get('post_type') == 'agenda' && $query->get('posts_per_page') == get_option('posts_per_page') ) {
+        $query->set( 'orderby', 'meta_value' );
+        $query->set( 'meta_key', 'agenda_data' );
+        $query->set( 'order', 'DESC' );
+
+        $current = current_time('Ymd');
+        $meta = array();
+        $meta[] = array(
+			'key' => 'agenda_data',
+			'compare' => '<',
+			'value' => $current
+		);
+
+		$query->set('meta_query', $meta);
+
+    }
+    if ( $query->is_main_query() && is_post_type_archive('links') ) {
+    	$query->set( 'posts_per_page', -1 );
+    }
+}
+add_action( 'pre_get_posts', 'filter_query_agenda' );
+
+
 add_action( 'xango_theme_slider_area', 'add_odin_breadcrumb_xango', 999 );
 
 //remove title default location
