@@ -100,8 +100,8 @@ require_once get_template_directory() . '/core/classes/class-post-type.php';
 /* Agenda */
 
 $eventos = new Odin_Post_Type(
-    'Agenda', // Nome (Singular) do Post Type.
-    'agenda' // Slug do Post Type.
+    'evento', // Nome (Singular) do Post Type.
+    'evento' // Slug do Post Type.
 );
 
 $eventos->set_labels(
@@ -124,10 +124,10 @@ $eventos->set_labels(
 
 $eventos->set_arguments(
     array(
-       'label'               => __( 'agenda', 'odin' ),
+       'label'               => __( 'evento', 'odin' ),
 	'description'         => __( 'Agenda de Eventos', 'odin' ),
 	'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail'),
-	'hierarchical'        => false,
+	'hierarchical'        => true,
 	'public'              => true,
 	'show_ui'             => true,
 	'show_in_menu'        => true,

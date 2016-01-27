@@ -129,3 +129,24 @@ h1.entry-title {
 .woocommerce h1.entry-title {
     margin-left: 0px;
 }
+
+.each.archive-agenda .data-content {
+    background: #570507;
+    color: #FFF;
+    height: 200px;
+}
+
+.each.archive-agenda span.dia-mes {
+    padding-top: 30px;
+    font-weight: 300;
+    font-size: 4.5em;
+    display: block;
+    text-align: center;
+}
+
+.each.archive-agenda span.mes {
+    font-weight: 300;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+}
