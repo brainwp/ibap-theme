@@ -101,6 +101,7 @@
 	}
 	.livros-thumb {
 		padding-left: 0;
+		padding-right: 0;
 	}
 	.livros-title h3{
 		padding-top:20px;
@@ -169,5 +170,37 @@
 				opacity:1;
 			}
 		}
+	}
+}
+
+.each-product {
+	padding-bottom:40px;
+
+	.product-bg {
+		background: #FFF;
+		padding-left:0;
+	}
+	.product-thumb {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.product-title h3{
+		padding-top:20px;
+		margin-top: 0;
+		font-weight: 300;
+		color: #5a0d0d;
+	}
+	.the-content {
+		color: #101010;
+		font-size: 1.0em;
+		padding-bottom:10px;
+	}
+	.btn-container button {
+		font-family: 'Source Sans Pro', sans-serif;
+		position: absolute;
+		margin-top:-10px;
+		border:transparent !important;
+		background: #5a0d0d !important;
+		right: 5px;
 	}
 }
