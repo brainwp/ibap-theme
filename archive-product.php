@@ -35,7 +35,7 @@ get_header( 'matuck' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 		<div class="container">
-			<main id="content" class="noticias-slider-content col-md-12">
+			<main id="content" class="archive-product-content col-md-12">
 			<?php
 				/**
 				 * woocommerce_before_shop_loop hook

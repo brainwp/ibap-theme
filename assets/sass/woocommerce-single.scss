@@ -4,6 +4,7 @@
 	}
 	.woocommerce-title {
 		background: #f7db9c;
+		padding-bottom: 20px;
 		h1 {
 			font-weight: bold;
 			font-size: 3em;
@@ -15,9 +16,16 @@
 		color:#FFF !important;
 	}
 }
+
+.product-title h3{
+		padding-top:20px;
+		margin-top: 0;
+		font-weight: 300;
+		color: #5a0d0d;
+	}
 .woocommerce.single-product{
 	.entry-summary .price {
-		display: none;
+		display: block;
 	}
 	@media screen and (min-width: 800px) {
 		.entry-summary {
@@ -44,6 +52,7 @@
 		padding-bottom:20px;
 		border-bottom: 2px solid #a4a092; 
 		margin-bottom: 30px;
+		display: none;
 	}
 	.woocommerce-price .amount{
 		color: #660604;

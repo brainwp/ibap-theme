@@ -4,7 +4,7 @@
 <article class="col-md-12 each-livros">
 	<a href="<?php the_permalink();?>" class="col-md-12 livros-bg">
 		<div class="col-md-4 livros-thumb">
-			<?php echo odin_thumbnail( 300, 500, get_the_title(), true, 'img-capas' );?>
+			<?php echo odin_thumbnail( 300, 460, get_the_title(), true, 'img-capas' );?>
 		</div><!-- .col-md-4 livros-thumb -->
 		<div class="col-md-8 pull-right">
 			<div class="livros-title">

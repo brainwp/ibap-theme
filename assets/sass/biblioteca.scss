@@ -173,12 +173,27 @@
 	}
 }
 
+.archive .archive-product-content {
+    margin-top: 0px;
+}
+
+.woocommerce .woocommerce-result-count {
+    padding: 0 14px;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+	color: #333333;
+	font-size: 3em;
+	float: left;
+}
+
 .each-product {
 	padding-bottom:40px;
 
 	.product-bg {
 		background: #FFF;
 		padding-left:0;
+		padding-right: 0;
 	}
 	.product-thumb {
 		padding-left: 0;
